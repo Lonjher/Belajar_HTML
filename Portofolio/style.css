@@ -1,0 +1,121 @@
+*{
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+nav{
+	display: inline-flex;
+	width: 100%;
+	height: 50px;
+	margin: auto;
+	padding: 20px 0px;
+	align-items: center;
+	justify-content: space-between;
+	background: lightblue;
+	border: 3px solid white;
+}
+
+.lingkaran {
+	display: flex;
+/*	background: red;*/
+}
+
+.nav .lingkaran .image{
+	width: 70px;
+	background: white;
+	border-radius: 100%; /*Membuat cekungan tepi*/
+	margin-left: 8px;
+	margin-top: 0px;
+	align-items: end;
+}
+
+.name{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 10px;
+}
+
+.name h1{
+	font-size: 20px;
+}
+
+.garis{
+	margin-left: 0;
+	width: 100px;
+	height: 1px;
+	background: white;
+}
+
+.name h2{
+	font-size: 10px;
+	color: white;
+}
+
+.nav ul {
+	background: inherit;
+	display: flex; /*Membuat list ke pinggir*/
+}
+
+.nav ul li{
+	list-style-type: none; /*menghapus list bulet*/
+	margin: 10px 10px; /*Membuat renggang antara list*/
+	background: inherit;
+}
+
+.nav ul a {
+	text-decoration: none;
+	display: inline-block;
+	margin-right: 20px;
+	background: inherit;
+}
+
+.nav ul a:hover{
+	color: orange;
+}
+
+.gambar{
+	display: flex;
+	position: center;
+	padding: 10px;
+/*	margin-left: 50px;*/
+}
+
+.gambar img{
+	width: 50;
+	max-width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section{
+	display: flex;
+/*	border: 1px solid lightgreen;*/
+	justify-content: space-evenly;
+	text-align: center;
+}
+
+section div {
+	border: 1px solid black;
+	width: 30%;
+}
+
+section div h4{
+	margin-top: 10px;
+	font-size: 14px;
+	font-family: sans-serif;
+}
+
+section a {
+	text-decoration: none;
+
+}
+
+section div a:hover{
+	display: inline-block;
+	transition: .1s;
+	transform: scale(1.2);
+}
