@@ -5,15 +5,32 @@
 }
 
 nav{
+
 	display: inline-flex;
 	width: 100%;
 	height: 50px;
 	margin: auto;
 	padding: 20px 0px;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	background: lightblue;
 	border: 3px solid white;
+}
+
+nav .line{
+	display: none;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 25px;
+	height: 25px;
+	/* background-color: blue; */
+	/* margin-right: 10x; */
+}
+
+nav .line span{
+	width: 100%;
+	height: 10%;
+	background-color: #ffffff;
 }
 
 .lingkaran {
@@ -118,4 +135,17 @@ section div a:hover{
 	display: inline-block;
 	transition: .1s;
 	transform: scale(1.2);
+}
+
+@media only screen and (max-width: 610px) {
+	.nav ul{
+		background-color: black;
+		display: none;
+	}
+	nav .line{
+		display: flex;
+	}
+	nav{
+		justify-content: space-around;
+	}
 }
